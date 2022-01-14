@@ -2,8 +2,8 @@ package prilepsky.repdata.lib
 
 import androidx.lifecycle.ViewModel
 
-abstract class RepDataViewModel<T>(val repData: RepData<T>): ViewModel(), RepDataObserver<T> {
+abstract class RepDataViewModel<T>(private val repository: RepDataOwner<T>): ViewModel(), RepDataObserver<T> {
     override fun onCleared() {
-        repData.unobserve(this)
+        repository.unobserveData(this)
     }
 }
