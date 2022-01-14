@@ -2,9 +2,9 @@ package prilepsky.repdata
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import prilepsky.repdata.lib.RepDataObserver
 
-class MainActivityViewModel(val repository: MyRepo) : ViewModel(), RepDataObserver<List<Item>> {
+class MainActivityViewModel(val repository: MyRepo) : ViewModel(),
+    prilepsky.repdata.lib.RepDataObserver<List<Item>> {
     val data: MutableLiveData<List<Item>> = MutableLiveData()
 
     init {

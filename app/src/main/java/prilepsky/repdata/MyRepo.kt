@@ -1,11 +1,8 @@
 package prilepsky.repdata
 
-import prilepsky.repdata.lib.RepData
-import prilepsky.repdata.lib.RepDataOwner
-import prilepsky.repdata.lib.emptyRepData
-
-class MyRepo : RepDataOwner<List<Item>>  {
-    override val repData: RepData<List<Item>> = emptyRepData()
+class MyRepo : prilepsky.repdata.lib.RepDataOwner<List<Item>> {
+    override val repData: prilepsky.repdata.lib.RepData<List<Item>> =
+        prilepsky.repdata.lib.emptyRepData()
 
     private val list = mutableListOf<Item>()
 
