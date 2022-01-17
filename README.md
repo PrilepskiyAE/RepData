@@ -8,7 +8,7 @@ Add this in your **app**-level **build.gradle** file:
 ```groovy
 dependencies {
 	...
-	def latest_version_tag = 2.2
+	def latest_version_tag = 1.0.4
 	implementation "com.github.PrilepskiyAE:RepData:$latest_version_tag"
 	...
 }
