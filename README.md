@@ -1,6 +1,6 @@
 # RepData
 
-# AppManualToolbox
+Библиотека которая позволяет передовать данные между репозиторием и viewmodel используя реактивный подход с шаблоном наблюдателя
 
 ## Include in your project
 **Gradle dependency**
@@ -25,7 +25,7 @@ allprojects {
 ```
 # Examples of usage
 
-** viewmodel **
+**viewmodel**
 ```kotlin
 class MainActivityViewModel(val repository: MyRepo) : ViewModel(),
     prilepsky.repdata.lib.RepDataObserver<List<Item>> {
@@ -48,7 +48,7 @@ class MainActivityViewModel(val repository: MyRepo) : ViewModel(),
     }
 }
 ```
-** repository **
+**repository**
 ```kotlin
 class MyRepo : prilepsky.repdata.lib.RepDataOwner<List<Item>> {
     override val repData: prilepsky.repdata.lib.RepData<List<Item>> =
