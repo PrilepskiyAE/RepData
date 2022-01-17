@@ -1,6 +1,6 @@
 # RepData
 
-RepData это Библиотека которая позволяет передовать данные между репозиторием и viewmodel, используется реактивный подход с шаблоном наблюдателя
+RepData is android library that allows you to pass data between the repository and the viewmodel, using a reactive approach with the observer pattern
 
 ## Include in your project
 **Gradle dependency**
